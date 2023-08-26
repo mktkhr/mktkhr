@@ -1,7 +1,14 @@
-<div style="display:flex">
-  <img src="https://github-readme-stats.vercel.app/api?username=mktkhr&count_private=true&show_icons=true" height="150px"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mktkhr&layout=compact" height="150px" />
+<div>
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mktkhr&theme=vue" />
 </div>
+<div style="display:flex">
+  <img src="https://github-readme-stats.vercel.app/api?username=mktkhr&count_private=true&show_icons=true&theme=vue" height="170px"/>
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mktkhr&theme=vue&utcOffset=8" height="170px" />
+</div>
+<div style="display:flex">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mktkhr&layout=compact&langs_count=8&theme=vue" />
+</div>
+
 
 <!--
 **mktkhr/mktkhr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
