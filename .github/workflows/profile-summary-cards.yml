@@ -1,0 +1,40 @@
+name: GitHub Profile Summary Cards
+
+on:
+  schedule:
+    # 毎日 UTC 00:00 (JST 09:00) に実行
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # カード生成（内蔵の git push は失敗しても続行）
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_CARDS_PAT }}
+        with:
+          USERNAME: mktkhr
+          BRANCH_NAME: profile-cards
+          UTC_OFFSET: 9
+        continue-on-error: true
+
+      # 生成された SVG を profile-cards ブランチに push
+      - name: Push to profile-cards branch
+        env:
+          PAT: ${{ secrets.SUMMARY_CARDS_PAT }}
+        run: |
+          if [ ! -d "profile-summary-card-output" ]; then
+            echo "::error::Output directory not found"
+            exit 1
+          fi
+          cd profile-summary-card-output
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan profile-cards
+          git add .
+          git commit -m "Update profile summary cards"
+          git remote add origin "https://x-access-token:${PAT}@github.com/mktkhr/mktkhr.git"
+          git push --force origin profile-cards

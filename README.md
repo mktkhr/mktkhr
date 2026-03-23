@@ -1,26 +1,16 @@
-<div>
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mktkhr&theme=vue" />
-</div>
-<div style="display:flex">
-  <img src="https://github-readme-stats.vercel.app/api?username=mktkhr&count_private=true&show_icons=true&theme=vue" height="170px"/>
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mktkhr&theme=vue&utcOffset=8" height="170px" />
-</div>
-<div style="display:flex">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mktkhr&layout=compact&langs_count=8&theme=vue" />
-</div>
+<!-- Profile Details: contribution graph + summary -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mktkhr/mktkhr/profile-cards/vue/0-profile-details.svg" />
+</p>
 
+<!-- Stats + Productive Time -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mktkhr/mktkhr/profile-cards/vue/3-stats.svg" width="400" />
+  <img src="https://raw.githubusercontent.com/mktkhr/mktkhr/profile-cards/vue/4-productive-time.svg" width="400" />
+</p>
 
-<!--
-**mktkhr/mktkhr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!-- Language cards -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mktkhr/mktkhr/profile-cards/vue/1-repos-per-language.svg" width="400" />
+  <img src="https://raw.githubusercontent.com/mktkhr/mktkhr/profile-cards/vue/2-most-commit-language.svg" width="400" />
+</p>
